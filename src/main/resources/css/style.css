@@ -1,0 +1,7 @@
+.left-bar-gradient{
+    -fx-background-color: linear-gradient(to bottom right, #ff6f00, #ffbb00);
+}
+
+.white{
+    -fx-background-color: #ffffff;
+}

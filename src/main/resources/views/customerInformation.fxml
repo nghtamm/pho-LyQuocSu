@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.customerInformationController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="420.0">
+         <children>
+            <Label layoutX="56.0" layoutY="103.0" text="Thông tin khách hàng">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="175.0" text="Họ và tên">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="71.0" layoutX="176.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/person-logo.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="customerName" layoutX="30.0" layoutY="212.0" prefHeight="40.0" prefWidth="360.0" promptText="Nhập họ và tên khách hàng">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="30.0" layoutY="275.0" text="Giới tính">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="customerGender" layoutX="30.0" layoutY="312.0" prefHeight="40.0" prefWidth="360.0" promptText="Chọn giới tính..." />
+            <Label layoutX="30.0" layoutY="381.0" text="Số điện thoại">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="customerTel" layoutX="30.0" layoutY="418.0" prefHeight="40.0" prefWidth="360.0" promptText="Nhập số điện thoại khách hàng">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </TextField>
+            <Button fx:id="doneButton" layoutX="263.0" layoutY="501.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="127.0" stylesheets="@../css/dashboardDesign.css" text="Hoàn tất" onAction="#customerAdd">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="func-button" />
+                  <String fx:value="box-radius" />
+               </styleClass>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
