@@ -18,7 +18,7 @@ Phần mềm quản lý chuỗi cửa hàng phở gia truyền Lý Quốc Sư - 
 - Dữ liệu được lưu trên local, import thông qua file *.bak*
 
 **Tác giả**
-- [Nguyễn Hoàng Tâm](https://github.com/nghtamm2003)
+- [Nguyễn Hoàng Tâm](https://github.com/nghtamm)
 	
 ## Techstack
 - Ngôn ngữ lập trình Java
